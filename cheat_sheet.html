@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SAE Portfolio Website - Beispiel - HTML Cheat-Sheet</title>
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, Terminator">
+<meta name="description" content="Eine einfache Portfolio-Website für den Grundkurs">
+<meta name="author" content="René Esposito, SAE Zurich">
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="container">
+	<header>
+		<h1>(h1) Portfolio Website</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li><span class="invisible640"> | </span>
+			<li><a href="mein_cv.html">Mein CV</a></li><span class="invisible640"> | </span>
+			<li><a href="meine_hobbys.html">Meine Hobbys</a></li><span class="invisible640"> | </span>
+			<li><a href="lieblings_websites.html">Lieblings-Websites</a></li><span class="invisible640"> | </span>
+			<li class="active"><a href="cheat_sheet.html">HTML Cheat-Sheet</a></li><span class="invisible640"> | </span>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+	<div id="stage">
+		<h2>(h2) HTML Cheat-Sheet (Sprungliste)</h2>
+		
+		<a name="top"></a>
+		<h3>(h3) HTML-Elemente:</h3>
+		<p>Klicken Sie auf ein Element, um zu der Erklärung zu springen.</p>
+		<p><code><a href="#h">&lt;h1&gt; - &lt;h6&gt;</a>, <a href="#p">&lt;p&gt;</a>, <a href="#a">&lt;a&gt;</a>, <a href="#img">&lt;img&gt;</a>, <a href="#ul">&lt;ul&gt;</a>, <a href="#ol">&lt;ol&gt;</a>, <a href="#table">&lt;table&gt;</a></code></p>
+		<br>
+		<div>
+		<a name="h"></a><h4><code>&lt;h1&gt; - &lt;h6&gt;</code></h4>
+		<p>(h = heading = Überschrift) leitet eine Überschrift ein. Die Nummer steht für die Überschriftenebene. 1 ist die höchste Ebene, 6 die niedrigste. Dahinter folgt der Text der Überschrift.</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<div>
+		<a name="p"></a><h4><code>&lt;p&gt;</code></h4>
+		<p>(p = paragraph = Absatz) leitet einen Textabsatz ein. &lt;/p&gt; beendet den Textabsatz und steht am Ende des Absatztextes. Absätze dienen der optischen Gliederung eines Textes. Beim Erstellen von HTML-Dateien genügt es nicht, im Editor einen harten Umbruch einzufügen.</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<div>
+		<a name="a"></a><h4><code>&lt;a&gt;</code></h4>
+		<p>Für Verweise in HTML gibt es das a-Element (a = anchor = Anker). Damit jedoch ein Verweis aus diesem Element wird, ist das Attribut <code>href</code> erforderlich (<code>href</code> = hyper reference = Hyper(text)-Referenz). Als Wert an das href-Attribut weisen Sie das gewünschte Verweisziel zu. Als Inhalt des a-Elements, also zwischen &lt;a&gt; und &lt;/a&gt;, notieren Sie den Text, der dem Anwender als Verweis angeboten wird (bei den meisten Web-Browsern andersfarbig, meist unterstrichen).</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<div>
+		<a name="img"></a><h4><code>&lt;img&gt;</code></h4>
+		<p>Um Grafiken in Ihre HTML-Dateien einzubinden, referenzieren Sie die Grafikdateien an gewünschten Stellen im HTML-Quelltext mit Hilfe des img-Tags. Geeignete Dateiformate für Web-gerechte Grafiken sind vor allem GIF und JPEG, allmählich aber auch PNG. Grafiken sind aus HTML-Sicht sog. Inline-Elemente.</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<div>
+		<a name="ul"></a><h4><code>&lt;ul&gt;</code></h4>
+		<p>ul leitet eine Aufzählungsliste ein (ul = unordered list = unsortierte Liste). Mit &lt;li&gt; beginnt ein neuer Punkt innerhalb der Liste (li = list item = Listeneintrag).<br>
+		Wie das Bullet dargestellt wird, bestimmt dabei der Web-Browser.<br>
+		Das Verschachteln von Listen ist ebenfalls möglich.</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<div>
+		<a name="ol"></a><h4><code>&lt;ol&gt;</code></h4>
+		<p>ol leitet eine nummerierte Liste ein (ol = ordered list = nummerierte Liste). Mit &lt;li&gt; beginnt ein neuer Punkt innerhalb der Liste (li = list item = Listeneintrag).</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<div>
+		<a name="table"></a><h4><code>&lt;table&gt;</code></h4>
+		<p>table leitet eine Tabelle ein (table = Tabelle). Wenn die Tabelle sichtbare Gitternetzlinien enthalten soll, müssen Sie im einleitenden &lt;table&gt;-Tag das Attribut <code>border</code> notieren und ihm einen Wert größer 0 zuweisen. Der angegebene Wert ist dann die Breite des Rahmens in Pixeln. Um eine blinde Tabelle ohne sichtbaren Rahmen und Gitternetzlinien zu erzeugen, lassen Sie die Angabe zu border entweder weg, oder - was sauberer ist - Sie notieren <code>border=&quot;0&quot;</code>.</p>
+		<p><a href="#top">&#8593; nach oben</a></p>
+		</div>
+		<br>
+		<h2>(h2) Ziel der Übung</h2>
+		<p>Ziel dieser Seite ist es, eine Sprungliste zu erstellen. Die Sprungliste sollte es erlauben, von oben nach unten zu den Ankerpunkten springen, aber auch von unten nach oben (mit sog. Top-Links)</p>
+		<p>Sprunglisten werden sehr häufig bei FAQs (<strong>F</strong>requently <strong>A</strong>sked <strong>Q</strong>uestions) eingesetzt. Ausserdem kommt die Technologie in letzter Zeit sehr häufig auf sog. &quot;one-page scrolling sites&quot; zum Einsatz.</p>
+		<br><br><br>
+	</div>
+	<footer>
+		<p>(footer p) Dies ist ein Beispiel für eine Portfolio-Website (Kurzkurs SAE Zurich). Inhalte bitte ersetzen.</p>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+/* ------------------ ein einfacher Browser-Reset, hier ev. ergänzen ------------------ */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------------------------- allgemeine Regeln für Tags ---------------------------- */
+html,body {
+	height: 100%;
+}
+
+body {
+	background-color: #DDDDDD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 14px;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 8px;
+}
+
+h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 2px;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+
+table {
+	margin-bottom: 15px;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+table.swot, table.border {
+	border-collapse: collapse;
+}
+
+table.swot td {
+	border: 1px solid #CCCCCC;
+	padding: 4px 7px 3px 5px;
+}
+
+table.border td {
+	font-size: 12px;
+	line-height: 16px;
+	border: 1px solid #333333;
+	padding: 5px 7px 4px 5px;
+}
+
+.swot_header_left {
+	background-color: #9EC8D4;
+	font-weight: bold;
+}
+
+.swot_header_right {
+	background-color: #1480A3;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.img_float_left {
+	float: left;
+	margin: 0px 20px 15px 0px;
+}
+
+ul, ol {
+	margin: 0px 0px 12px 22px;
+}
+
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 3px;
+}
+
+a {
+	color: #555555;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* ------------------------------------- Klassen -------------------------------------- */
+.quellenangabe {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.listheading {
+	font-style: italic;
+}
+
+/* ------------------------------------ Formulare ------------------------------------- */
+input, textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 2px 3px 2px 3px;
+	border: 1px solid #333333;
+}
+
+input[type=submit] {
+	padding: 4px 10px 4px 10px;
+	background-color: #FFFFFF;
+	font-weight: bold;
+}
+
+input[type=submit]:hover {
+	background-color: #1480A3;
+	color: #FFFFFF;
+}
+
+/* ------------------------------------- Bereiche ------------------------------------- */
+#container {
+	background-color: #FFFFFF;
+	width: 1100px;
+	margin: 20px auto 12px auto;
+	-webkit-box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.6);
+	-moz-box-shadow:    7px 7px 10px 0px rgba(50, 50, 50, 0.6);
+	box-shadow:         7px 7px 10px 0px rgba(50, 50, 50, 0.6);
+}
+
+/* header */
+header {
+	background-image: url(images/header.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 220px;
+	text-align: right;
+}
+
+header h1 {
+	color: #FFFFFF;
+	padding: 16px 25px 0px 0px;
+}
+
+/* Navigation */
+nav {
+	text-align: center;
+	padding: 7px 0px 6px 0px;
+	background-color: #EEEEEE;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav ul li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	margin: 0;
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #C84020;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #000000;
+}
+
+nav ul li.active a {
+	color: #000000;
+}
+
+nav ul li.active a:hover {
+	color: #C84020;
+}
+
+/* Content: Text, Tabellen, Bilder, etc. */
+#stage {
+	padding: 45px 75px 38px 75px;
+}
+
+/* Footer */
+footer {
+	padding: 8px 0px 7px 0px;
+	text-align: center;
+	background-color: #EEEEEE;
+}
+
+footer p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 0px;
+}
+
+/* --------------------------------- CSS Media-queries ---------------------------------*/
+/* mindestens zwei Media-queries notieren */
+@media (max-width: 1100px) {
+	#container  {
+		width: 100%;
+		margin-top: 0;
+	}
+	
+	#stage {
+		padding: 5% 2% 5% 2%;
+	}
+	
+	header {
+		height: 190px;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+}
+
+@media (max-width: 640px) {
+	header {
+		height: 120px;
+	}
+	
+	header h1 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	nav {
+		padding: 0;
+	}
+	
+	nav ul li {
+		display: block;
+		border-bottom: 1px solid #CCCCCC;
+		
+	}
+	
+	nav ul li a {
+		display: block;
+		padding: 3px 0px 2px 0px;
+	}
+	
+	nav ul li a:hover {
+		text-decoration: none;
+		background-color: #AAAAAA;
+	}
+	
+	.invisible640 {
+		display: none;
+	}
+}
+
+

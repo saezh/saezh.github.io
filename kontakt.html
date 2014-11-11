@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SAE Portfolio Website - Beispiel - Kontakt</title>
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, Terminator">
+<meta name="description" content="Eine einfache Portfolio-Website für den Grundkurs">
+<meta name="author" content="René Esposito, SAE Zurich">
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+<script>
+function klicki() {
+	alert("Es wurde geklickt")
+}
+</script>
+</head>
+
+<body>
+<div id="container">
+	<header>
+		<h1>(h1) Portfolio Website</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li><span class="invisible640"> | </span>
+			<li><a href="mein_cv.html">Mein CV</a></li><span class="invisible640"> | </span>
+			<li><a href="meine_hobbys.html">Meine Hobbys</a></li><span class="invisible640"> | </span>
+			<li><a href="lieblings_websites.html">Lieblings-Websites</a></li><span class="invisible640"> | </span>
+			<li><a href="cheat_sheet.html">HTML Cheat-Sheet</a></li><span class="invisible640"> | </span>
+			<li class="active"><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+	<div id="stage">
+		<h2>(h2) Kontakt</h2>
+		<p>Ein HTML-Formular erstellen</p>
+		<form id="form1" name="form1" method="post" action="">
+  			<table border="0" cellspacing="0" cellpadding="0" class="border">
+    			<tr>
+      				<td>Label</td>
+      				<td>Element</td>
+      				<td>Code</td>
+    			</tr>
+    			<tr>
+      				<td>Anrede: </td>
+      				<td>
+      					<input type="radio" name="Anrede" id="Herr" value="m">
+          				<label for="Herr">Herr</label>
+          				<input type="radio" name="Anrede" id="Frau" value="w">
+        				<label for="Frau">Frau</label>
+					</td>
+      				<td><code>&lt;input type=&quot;radio&quot; name=&quot;Anrede&quot; id=&quot;Anrede&quot; value=&quot;m&quot;&gt; ...</code></td>
+   				</tr>
+    			<tr>
+      				<td><label for="Vorname">Vorname</label></td>
+      				<td><input name="Vorname" type="text" size="35"></td>
+      				<td><code>&lt;input name=&quot;Vorname&quot; type=&quot;text&quot; size=&quot;35&quot;&gt;</code></td>
+    			</tr>
+   				<tr>
+      				<td><label for="Nachname">Nachname</label></td>
+      				<td><input name="Nachname" type="text" size="35"></td>
+     				<td><code>&lt;input name=&quot;Nachname&quot; type=&quot;text&quot; size=&quot;35&quot;&gt;</code></td>
+    			</tr>
+   				<tr>
+      				<td valign="top"><label for="Adresse">Adresse:</label></td>
+      				<td><textarea name="Adresse" cols="35" rows="5" id="Adresse"></textarea></td>
+      				<td><code>&lt;textarea name=&quot;Adresse&quot; cols=&quot;35&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;</code></td>
+    			</tr>
+    			<tr>
+      				<td><label for="Ort">PLZ/Ort:</label></td>
+      				<td><input name="Ort" type="text" size="35" /></td>
+      				<td><code>&lt;input name=&quot;Ort&quot; type=&quot;text&quot; size=&quot;35&quot;&gt;</code></td>
+    			</tr>
+    			<tr>
+      				<td><label for="Land">Land:</label></td>
+      				<td><select name="Land">
+        					<option value="0">Bitte wählen</option>
+        					<option value="Schweiz">Schweiz</option>
+        					<option value="Deutschland">Deutschland</option>
+        					<option value="Öseterreich">Öseterreich</option>
+        					<option value="Liechtenstein">Liechtenstein</option>
+      					</select></td>
+      				<td><code>&lt;select name=&quot;Land&quot;&gt;<br />
+  						&lt;option value=&quot;0&quot;&gt;Bitte wählen&lt;/option&gt;<br />
+  						&lt;option value=&quot;Schweiz&quot;&gt;Schweiz&lt;/option&gt;<br />
+  						...<br />
+  						&lt;option value=&quot;Liechtenstein&quot;&gt;Liechtenstein&lt;/option&gt;<br />  &lt;/select&gt;</code></td>
+    			</tr>
+    			<tr>
+      				<td><label for="Email">E-Mail Adresse:</label></td>
+      				<td><input name="Email" type="text" size="35"></td>
+      				<td><code>&lt;input name=&quot;Email&quot; type=&quot;text&quot; size=&quot;35&quot;&gt;</code></td>
+    			</tr>
+    			<tr>
+      				<td>Hobbies:</td>
+      				<td>
+          				<input type="checkbox" name="Tauchen" id="Tauchen" value="Tauchen">
+          				<label for="Tauchen">Tauchen</label>
+        
+          				<input type="checkbox" name="Surfen" id="Surfen" value="Surfen">
+          				<label for="Surfen">Surfen</label>
+        
+          				<input type="checkbox" name="Segeln" id="Segeln" value="Segeln">
+          				<label for="Segeln">Segeln</label>
+					</td>
+      				<td><code>&lt;input type=&quot;checkbox&quot; name=&quot;Tauchen&quot; id=&quot;Tauchen&quot; value=&quot;Tauchen&quot;&gt;
+      				<br>...</code></td>
+    			</tr>
+    			<tr>
+      				<td colspan="3">&nbsp;</td>
+    			</tr>
+    			<tr>
+      				<td>&nbsp;</td>
+      				<td><input type="submit" name="go" value="Verschicken" onclick="klicki()"></td>
+      				<td><code>&lt;input type=&quot;submit&quot; name=&quot;go&quot; value=&quot;Verschicken&quot;&gt;</code></td>
+    			</tr>
+  			</table>
+		</form>
+	</div>
+	<footer>
+		<p>(footer p) Dies ist ein Beispiel für eine Portfolio-Website (Kurzkurs SAE Zurich). Inhalte bitte ersetzen.</p>
+	</footer>
+</div>
+</body>
+</html>
